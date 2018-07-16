@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+
+        android:orientation="vertical"
+        android:weightSum="3">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="ENTER NO FOR FIBO"
+            android:id="@+id/fibo"
+            />
+        <EditText
+            android:id="@+id/edit1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ENTER VALUE OF A"
+            android:inputType="number"
+            android:textSize="20dp"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:id="@+id/edit2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ENTER VALUE OF B"
+            android:inputType=""
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/resulttext"
+        android:layout_width="match_parent"
+        android:layout_height="112dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="150dp"
+        android:textSize="60dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="241dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:orientation="vertical"
+        android:weightSum="5">
+
+        <Button
+            android:id="@+id/addtion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:onClick="addition"
+            android:text="ADD"
+            android:background="@color/colorAccent"
+            android:layout_weight="1"/>
+
+
+        <Button
+            android:id="@+id/subtraction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:onClick="subtraction"
+            android:text="SUB"
+            android:layout_marginBottom="5dp"/>
+
+        <Button
+            android:id="@+id/multiplication"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+     android:layout_weight="1"
+            android:onClick="multi"
+            android:text="mul"
+            android:layout_marginBottom="5dp"/>
+
+        <Button
+            android:id="@+id/divsion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:onClick="division"
+            android:text="DIV"
+            android:layout_marginBottom="5dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="FIBO"
+            android:background="@color/colorAccent"
+            android:onClick="Fibo"/>
+    </LinearLayout>
+
+</RelativeLayout>
